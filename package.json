@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "next-dev": "wrangler pages dev .vercel/output/static --compatibility-flag=nodejs_compat --d1=TEST_D1 --local"
   },
   "dependencies": {
     "next": "14.0.1",
