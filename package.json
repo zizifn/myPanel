@@ -10,10 +10,10 @@
     "next-dev": "wrangler pages dev .vercel/output/static --compatibility-flag=nodejs_compat --d1=TEST_D1 --local"
   },
   "dependencies": {
+    "@cloudflare/next-on-pages": "^0.0.0-4572873",
     "next": "14.0.1",
     "react": "^18",
-    "react-dom": "^18",
-    "@cloudflare/next-on-pages": "^1.7.2"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",

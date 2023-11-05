@@ -1,0 +1,6 @@
+[[d1_databases]]
+binding = "TEST_D1" # available in your Worker on env.DB
+database_name = "TEST_D1"
+database_id = "152a7663-7378-406e-bbdc-7cc5c4b98533"
+preview_database_id = "TEST_D1" # Required for Pages local development
+migrations_dir = "drizzle"
