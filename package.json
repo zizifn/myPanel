@@ -7,19 +7,22 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "next-dev": "wrangler pages dev .vercel/output/static --compatibility-flag=nodejs_compat --d1=TEST_D1 --local"
+    "next-dev": "wrangler pages dev .vercel/output/static --compatibility-flag=nodejs_compat --d1=TEST_D1 --local",
+    "generate": "drizzle-kit generate:sqlite --schema=src/app/db/schema.ts"
   },
   "dependencies": {
-    "@cloudflare/next-on-pages": "^0.0.0-4572873",
-    "next": "14.0.1",
+    "drizzle-orm": "^0.29.0",
+    "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.8.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "drizzle-kit": "^0.20.2",
     "eslint": "^8",
     "eslint-config-next": "14.0.1",
     "eslint-plugin-next-on-pages": "^1.7.2",

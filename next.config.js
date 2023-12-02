@@ -7,7 +7,7 @@ module.exports = nextConfig
 // (note: this check is recommended but completely optional)
 if (process.env.NODE_ENV === 'development') {
     // we import the utility from the next-dev submodule
-    const { setupDevBindings } = require("@cloudflare/next-on-pages/next-dev");
+    const { setupDevBindings } = require("@cloudflare/next-on-pages/__experimental__next-dev");
 
     // we call the utility with the bindings we want to have access to
     setupDevBindings({
